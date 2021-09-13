@@ -1,0 +1,86 @@
+.api-playground {
+  padding: 2rem;
+  min-height: 100vh;
+  background: #f0f2f5;
+
+  .ant-layout-header,
+  .ant-layout-sider,
+  &.ant-layout,
+  .ant-menu {
+    background: #f0f2f5;
+  }
+
+  .ant-layout-content {
+    padding: 1rem;
+  }
+
+  .playground-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      flex: 1;
+      text-align: center;
+    }
+  }
+
+  .request-send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+
+    button:first-child {
+      margin-right: 4px;
+    }
+  }
+
+  .request-url {
+    padding: 0.8rem;
+    border: 1px solid #b8b7b7;
+    margin-bottom: 14px;
+
+    .request-type,
+    .request-endpoint {
+      padding: 0.8rem;
+    }
+
+    .request-type {
+      border-right: 1px solid #b8b7b7;
+    }
+
+    .request-type {
+      font-weight: bolder;
+    }
+  }
+
+  .playground-json {
+    display: flex;
+
+    h3 {
+      margin-bottom: 14px;
+    }
+
+    .grow-col {
+      flex: 1;
+      flex-grow: 1;
+    }
+
+    .request,
+    .response {
+      padding: 1rem;
+      background: #2a303b;
+      border-radius: 8px;
+      min-height: 50vh;
+      height: 100%;
+    }
+
+    .response {
+      margin-left: 16px;
+    }
+    .response-label {
+      margin-left: 16px;
+    }
+  }
+}

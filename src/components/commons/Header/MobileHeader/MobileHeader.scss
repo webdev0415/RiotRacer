@@ -1,0 +1,32 @@
+.headerMobile {
+  // width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 16px 16px;
+  background: var(--rio-menu);
+  box-shadow: 0px 3px 6px var(--black16);
+
+  .midContent {
+    width: 100px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  svg {
+    fill: var(--gray);
+  }
+}
+
+.leftSiderMobile {
+  .ant-drawer-body {
+    padding: 0px;
+  }
+  .ant-drawer-content {
+    background: var(--rio-submenu);
+    color: var(--white);
+  }
+}

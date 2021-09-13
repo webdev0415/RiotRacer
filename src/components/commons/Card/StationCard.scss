@@ -1,0 +1,32 @@
+.RioStationCard {
+  position: relative;
+
+  .RioStationCardHead {
+    top: 0px;
+    padding: 4px;
+    z-index: 10;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    background: var(--rio-primary_hover);
+  }
+
+  .RioStationCardFooter {
+    display: flex;
+    padding: 5px 12px;
+    align-items: center;
+    justify-content: space-between;
+
+    .AccruedTokens {
+      .subtitle2 {
+        &:first-child {
+          color: var(--gray);
+        }
+        &:last-child {
+          margin-left: 0.8rem;
+          color: var(--rio-secondary);
+        }
+      }
+    }
+  }
+}

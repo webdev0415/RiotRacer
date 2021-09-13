@@ -1,0 +1,58 @@
+.DashboardSideMenu {
+  flex-shrink: 0;
+  position: relative;
+  background: var(--rio-menu);
+  box-shadow: 0px -3px 6px var(--black75);
+
+  @media (min-width: 1600px) {
+    padding-left: 50px;
+    min-width: 350px;
+  }
+
+  @media (max-width: 1600px) and (min-width: 1366px) {
+    padding-left: 40px;
+    min-width: 242px;
+  }
+  @media (max-width: 1366px) and (min-width: 768px) {
+    padding-left: 22px;
+    min-width: 220px;
+  }
+
+  .scrollbar-container {
+    max-height: calc(100vh - var(--header-height-lg));
+    @media (max-width: 1600px) {
+      max-height: calc(100vh - var(--header-height-md));
+    }
+  }
+
+  .heading1 {
+    padding-top: 50px;
+    margin-bottom: 24px;
+  }
+
+  .SideMenuItem {
+    display: grid;
+    gap: 22px;
+    align-items: center;
+    grid-template-columns: 30px 1fr;
+    color: var(--gray);
+    padding: 14px 0px 14px 22px;
+    margin-bottom: 22px;
+
+    svg {
+      fill: var(--gray);
+    }
+
+    &.active,
+    &:hover {
+      color: var(--rio-secondary);
+      border-top-left-radius: 28px;
+      border-bottom-left-radius: 28px;
+      background: var(--menu-hover);
+
+      svg {
+        fill: var(--rio-secondary);
+      }
+    }
+  }
+}

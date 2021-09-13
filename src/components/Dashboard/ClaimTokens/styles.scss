@@ -1,0 +1,50 @@
+.claim_tokens_banner {
+  .main_title {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 20px 30px 20px;
+    border-bottom:1px solid var(--gray-400);
+  }
+  .wallet_box {
+    border:1px solid var(--gray-400);
+    border-radius: 10px;
+    padding: 20px 10px;
+    text-align: center;
+    width: 400px;
+    .wallet_header {
+      margin-top: 20px;
+      font-weight: 500;
+      margin-bottom: 5px;
+      font-size: 17px;
+    }
+    .wallet_balance {
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .claim_slp {
+      border:1px solid var(--gray-400);
+      background-color: transparent;
+      border-radius: 8px;
+      color: var(--gray-light-a7);
+      padding: 10px 40px;
+      cursor: pointer;
+      transition: all 0.5s;
+
+      &:hover {
+        border-color: var(--red);
+        background: var(--red);
+        color: var(--white);
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .claim_tokens_banner {
+    .wallet_box {
+      width: 100%;
+    }
+  }
+}

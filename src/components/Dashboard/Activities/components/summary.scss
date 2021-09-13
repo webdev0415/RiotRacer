@@ -1,0 +1,32 @@
+.ActivitiesSummary {
+  display: grid;
+  margin-bottom: 20px;
+  grid-gap: 15px;
+  grid-template-columns: repeat(4, 0.25fr);
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+
+  .SummaryCol {
+    padding: 24px 8px;
+    font-size: 14px;
+    font-weight: var(--font-medium);
+    border-radius: 4px;
+    background: var(--rio-submenu);
+    box-shadow: 0px 5px 5px var(--black20);
+
+    &:first-child {
+      border-left: 0px;
+    }
+
+    .value {
+      font-size: 24px;
+      color: var(--white);
+    }
+    .label {
+      font-size: 16px;
+      color: var(--white40);
+    }
+  }
+}

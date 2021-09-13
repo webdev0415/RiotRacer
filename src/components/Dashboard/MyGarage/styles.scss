@@ -1,0 +1,77 @@
+.RioGarage {
+  .CarFilterOptions {
+    margin-bottom: 30px;
+  }
+
+  .CarSortContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .SortButton {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &[disabled] {
+        opacity: 0.5;
+        cursor: not-allowed;
+        user-select: none;
+
+        .SortButtonText {
+          color: var(--gray);
+        }
+      }
+
+      span {
+        &:first-child {
+          line-height: 0;
+        }
+      }
+
+      &.ant-dropdown-open {
+        .selected {
+          svg {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .selected {
+        display: inline-flex;
+        align-items: center;
+        margin-left: 16px;
+        color: var(--rio-secondary);
+
+        svg {
+          fill: var(--rio-secondary);
+          margin-left: 16px;
+        }
+      }
+
+      .SortButtonText {
+        margin-left: 16px;
+      }
+
+      svg {
+        fill: var(--gray);
+      }
+
+      @media (max-width: 575px) {
+        .SortButtonText {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .GarageCarName {
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 6px;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}

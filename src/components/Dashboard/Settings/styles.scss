@@ -1,0 +1,199 @@
+.RioAccountSetting {
+  .rioPageContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80%;
+
+    @media (max-width: 575px) {
+      padding: 0px;
+    }
+  }
+}
+
+.RioAccountSettingCard {
+  width: 465px;
+  padding-top: 84px;
+  background: var(--black);
+
+  @media (max-width: 575px) {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 84px;
+  }
+  .UserPictureContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translate(-50%, -50%);
+
+    .ImageWrapper {
+      height: 80px;
+      width: 80px;
+      margin-bottom: 24px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      align-items: flex-start;
+    }
+  }
+
+  .UserInfoWrapper {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 12px;
+
+    .InfoWrapper {
+      min-height: 56px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-bottom: 4px;
+      font-weight: 500;
+
+      .FieldLabel {
+        font-size: 12px;
+        color: var(--gray);
+      }
+      .FieldValue {
+        font-size: 16px;
+        color: var(--white);
+      }
+    }
+
+    .UserField {
+      margin-bottom: 28px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .ActionWrapper {
+        margin-left: 12px;
+        position: relative;
+
+        .rioIconButton {
+          margin-bottom: 6px;
+        }
+      }
+    }
+
+    // @media (min-width: 1024px) {
+    //   display: grid;
+    //   grid-gap: 40px;
+    //   max-width: 100%;
+    //   grid-template-columns: repeat(2, 0.5fr);
+    // }
+  }
+
+  .NotificationWrapper {
+    width: 100%;
+    margin-top: 24px;
+    max-width: 320px;
+
+    h2 {
+      margin-bottom: 16px;
+    }
+
+    .NotificationSettingPanel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0px;
+
+      > div {
+        display: flex;
+        align-items: center;
+      }
+
+      svg {
+        fill: var(--gray);
+        margin-right: 22px;
+      }
+    }
+  }
+}
+
+.PhotoEditModal {
+  .rio-modal-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .ImagePreview {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ImagePreviewInner {
+      width: 240px;
+      height: 240px;
+
+      input {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .RioButton {
+    margin: 32px;
+    width: 250px;
+  }
+}
+
+.CodeVerifyModal {
+  .rio-modal-body {
+    padding-top: 0px;
+  }
+
+  .innerBlock {
+    width: 100%;
+    min-height: 28px;
+    text-align: center;
+    position: relative;
+
+    &.formTitle {
+      margin: 16px auto;
+    }
+  }
+
+  .resendCode {
+    display: block;
+    margin-top: 32px;
+    cursor: pointer;
+    color: var(--rio-primary);
+  }
+
+  .userEmail {
+    margin-bottom: 32px;
+    color: var(--rio-secondary);
+  }
+}

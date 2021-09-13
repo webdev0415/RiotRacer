@@ -1,0 +1,141 @@
+.OverviewContainer {
+  .CarSummary {
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    max-width: 400px;
+    padding: 22px 0px;
+    background: var(--black);
+
+    .CarInfo {
+      display: flex;
+      padding: 0px 30px;
+
+      > div {
+        flex: 1;
+      }
+    }
+
+    .CarInfoItem {
+      margin-bottom: 10px;
+
+      .subtitle2 {
+        margin-bottom: 6px;
+      }
+      .subject {
+        color: var(--white40);
+      }
+    }
+
+    .CarStatusTabView {
+      flex: 1;
+
+      .ant-tabs {
+        height: 100%;
+      }
+
+      .ant-tabs-content-holder {
+        height: 100%;
+      }
+
+      .ant-tabs-nav-list {
+        width: 100%;
+        .ant-tabs-tab {
+          flex: 1;
+          margin: 0px;
+          padding: 6px 0px;
+          justify-content: center;
+          background: var(--rio-submenu);
+
+          .custom-tab-title {
+            display: flex;
+            flex-direction: column;
+            color: var(--gray);
+            align-items: center;
+            font-size: 12px;
+
+            svg {
+              fill: var(--gray);
+            }
+          }
+          &:hover,
+          &.ant-tabs-tab-active {
+            background: var(--rio-menu);
+
+            .custom-tab-title {
+              color: var(--rio-secondary);
+              font-weight: var(--font-bold);
+
+              svg {
+                fill: var(--rio-secondary);
+              }
+            }
+          }
+        }
+        .ant-tabs-ink-bar {
+          display: none;
+        }
+      }
+      .ant-tabs-content {
+        padding: 0px 30px;
+
+        @media (max-width: 1440px) {
+          padding: 0px 24px;
+        }
+
+        .ant-tabs-tabpane {
+          &.status {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .StatusCard {
+              flex-shrink: 0;
+              width: 190px;
+              height: 240px;
+              padding: 24px 0px;
+              border-radius: 6px;
+              background-color: var(--rio-menu);
+              display: flex;
+              align-items: center;
+
+              &:first-child {
+                margin-right: 8px;
+              }
+
+              .RioProgressBar {
+                .heading2 {
+                  text-align: center;
+                }
+              }
+            }
+          }
+          &.details {
+            .CarInfoItem {
+              display: flex;
+              justify-content: space-between;
+
+              &:first-child {
+                margin-top: 24px;
+              }
+
+              > div {
+                flex: 1;
+              }
+            }
+          }
+        }
+
+        .RioProgressBar {
+          &.line {
+            margin-bottom: 16px;
+
+            &:last-child {
+              margin-bottom: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

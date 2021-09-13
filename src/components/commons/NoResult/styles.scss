@@ -1,0 +1,25 @@
+.NoResultWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  text-align: center;
+
+  .heading1 {
+    margin-bottom: 24px;
+  }
+  .heading4 {
+    margin-bottom: 48px;
+  }
+
+  .ShopNow {
+    min-width: 170px;
+    border-radius: 36px;
+
+    &:disabled {
+      &::after {
+        border-radius: 36px;
+      }
+    }
+  }
+}

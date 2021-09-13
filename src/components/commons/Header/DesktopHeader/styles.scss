@@ -1,0 +1,164 @@
+.HeaderDesktop {
+  height: var(--header-height-lg);
+  background: var(--rio-menu);
+  box-shadow: 0px 5px 5px var(--black16);
+  z-index: 980;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+
+  @media (max-width: 1600px) {
+    height: var(--header-height-md);
+  }
+
+  .HeaderRight,
+  .HeaderLeft {
+    display: flex;
+    align-items: center;
+
+    .HeaderLogo {
+      width: 100px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .PageMenu {
+    padding-left: 30px;
+
+    .RioMainMenu {
+      display: flex;
+      margin: 0px;
+      padding: 0px;
+
+      .RioMainMenuItem {
+        list-style: none;
+        white-space: nowrap;
+        line-height: 46px;
+        padding: 0 20px;
+        text-transform: uppercase;
+        color: var(--gray);
+        cursor: pointer;
+
+        .SubMenuTriger {
+          display: flex;
+          align-items: center;
+
+          span {
+            margin-right: 12px;
+          }
+        }
+
+        svg {
+          fill: var(--gray);
+        }
+
+        a {
+          color: var(--gray);
+        }
+
+        &:hover,
+        &.active {
+          font-weight: var(--font-bold);
+          color: var(--rio-secondary);
+          svg {
+            fill: var(--rio-secondary);
+          }
+
+          a {
+            color: var(--rio-secondary);
+          }
+        }
+      }
+    }
+  }
+
+  .UserBallaceContainer {
+    display: grid;
+    grid-column-gap: 30px;
+    margin-left: 30px;
+    grid-template-columns: 1fr 1fr;
+
+    .UserBallance {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--gray3);
+      padding: 16px 20px;
+      border-radius: 10px;
+      color: var(--gray);
+      min-width: 185px;
+      max-width: 200px;
+
+      > div {
+        display: flex;
+        flex-direction: column;
+
+        &:first-child {
+          flex: 1;
+          margin-right: 12px;
+        }
+
+        > div {
+          display: flex;
+          justify-content: space-between;
+
+          &:first-child {
+            .value {
+              margin-left: 8px;
+            }
+          }
+
+          &.gas {
+            justify-content: flex-start;
+
+            .value {
+              margin-right: 4px;
+            }
+          }
+        }
+      }
+
+      .value {
+        font-weight: var(--font-bold);
+        max-width: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .label {
+        text-transform: uppercase;
+      }
+
+      svg {
+        fill: var(--gray);
+      }
+    }
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .UserImage {
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    @media (max-width: 1600px) {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}

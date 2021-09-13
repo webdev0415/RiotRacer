@@ -1,0 +1,93 @@
+.account_banner {
+  .name {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 20px 30px 20px;
+    border-bottom: 1px solid var(--gray-400);
+  }
+  .wallet_banner {
+    width: 100%;
+  }
+  .assets_box {
+    border: 0.5px solid var(--gray-400);
+    border-radius: 5px;
+    width: calc(50% - 10px);
+    .assets_row {
+      padding: 10px;
+      border-bottom: 0.5px solid var(--gray-400);
+    }
+    .assets_col_header {
+      padding-right: 20px;
+      font-weight: 500;
+      cursor: pointer;
+      color: var(--gray-light-7c);
+    }
+  }
+  .claimButton {
+    width: 100%;
+    max-width: 150px;
+    margin: auto;
+  }
+}
+@media all and (max-width: 991px) {
+  .account_banner {
+    .wallet_banner {
+      flex-direction: column;
+      .wallet {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+    .assets_box {
+      width: unset;
+    }
+  }
+}
+
+.rio-wallerFlexBtn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 380px;
+  margin: 24px auto 0px;
+}
+
+@media (max-width: 767px) {
+  .account_banner .claimButton {
+    margin: 0 8px;
+  }
+  .account_banner {
+    padding: 0 0 20px;
+  }
+  .rio-wallerFlexBtn {
+    max-width: 335px;
+  }
+}
+
+@media (max-width: 475px) {
+  .account_banner {
+    .wallet_banner {
+      .wallet {
+        .wallet_retangle {
+          .item_bar {
+            padding: 0px 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .account_banner {
+    .wallet_banner {
+      .wallet {
+        .wallet_retangle {
+          .item_bar {
+            padding: 0px 8px;
+          }
+        }
+      }
+    }
+  }
+}

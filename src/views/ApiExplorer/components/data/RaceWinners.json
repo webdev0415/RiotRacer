@@ -1,0 +1,90 @@
+{
+  "payload": {
+    "players": [
+      {
+        "participant": "Player 1",
+        "chance": "1.001000"
+      },
+      {
+        "participant": "Player 2",
+        "chance": "1.339000"
+      },
+      {
+        "participant": "Player 3",
+        "chance": "1.200000"
+      },
+      {
+        "participant": "Player 4",
+        "chance": "1.250000"
+      },
+      {
+        "participant": "Player 5",
+        "chance": "1.150000"
+      },
+      {
+        "participant": "Player 6",
+        "chance": "1.010200"
+      },
+      {
+        "participant": "Player 7",
+        "chance": "1.050000"
+      },
+      {
+        "participant": "Player 8",
+        "chance": "1.050600"
+      },
+      {
+        "participant": "Player 9",
+        "chance": "1.070309"
+      },
+      {
+        "participant": "Player 10",
+        "chance": "1.050430"
+      }
+    ]
+  },
+  "response": {
+    "data": [
+      {
+        "participant": "Player 4",
+        "chance": "1.250000"
+      },
+      {
+        "participant": "Player 1",
+        "chance": "1.001000"
+      },
+      {
+        "participant": "Player 2",
+        "chance": "1.339000"
+      },
+      {
+        "participant": "Player 5",
+        "chance": "1.150000"
+      },
+      {
+        "participant": "Player 3",
+        "chance": "1.200000"
+      },
+      {
+        "participant": "Player 9",
+        "chance": "1.070309"
+      },
+      {
+        "participant": "Player 8",
+        "chance": "1.050600"
+      },
+      {
+        "participant": "Player 7",
+        "chance": "1.050000"
+      },
+      {
+        "participant": "Player 10",
+        "chance": "1.050430"
+      },
+      {
+        "participant": "Player 6",
+        "chance": "1.010200"
+      }
+    ]
+  }
+}

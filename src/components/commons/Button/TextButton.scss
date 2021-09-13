@@ -1,0 +1,23 @@
+.RioTextButton {
+  font-size: 14px;
+  color: var(--rio-primary);
+  font-weight: var(--font-medium);
+  user-select: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  svg {
+    stroke: var(--rio-primary);
+    margin-left: 8px;
+  }
+
+  &.disabled {
+    color: var(--gray);
+    cursor: not-allowed;
+
+    svg {
+      stroke: var(--gray);
+    }
+  }
+}

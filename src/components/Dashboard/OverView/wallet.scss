@@ -1,0 +1,44 @@
+.OverviewContainer {
+  .WalletBlock {
+    .BalanceWidgetCard {
+      background: var(--black);
+      .BalanceRow {
+        padding: 0px 12px 8px;
+
+        .BalanceRowTitle {
+          color: var(--rio-secondary);
+          padding: 12px 0px;
+        }
+        .BalanceRowInner {
+          display: flex;
+          width: 100%;
+
+          .BalanceCol {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &:first-child {
+              border-right: 1px solid;
+              border-color: var(--rio-menu);
+              align-items: flex-start;
+            }
+
+            &:last-child {
+              align-items: center;
+            }
+
+            @media (max-width: 768px) {
+              padding-top: 32px;
+            }
+
+            .subtitle2 {
+              color: var(--gray);
+            }
+          }
+        }
+      }
+    }
+  }
+}

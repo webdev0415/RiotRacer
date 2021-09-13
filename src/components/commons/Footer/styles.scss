@@ -1,0 +1,85 @@
+.RioFooter {
+  padding: 64px 0px;
+
+  @media (max-width: 575px) {
+    padding-top: 32px;
+  }
+
+  .copyright {
+    text-align: center;
+    color: var(--gray);
+    font-size: 12px;
+  }
+
+  .Buttons {
+    padding: 0px 32px;
+    display: flex;
+    margin-bottom: 32px;
+
+    .StartButton {
+      // min-width: calc(100% - 68px);
+      min-width: 100%;
+    }
+    @media (min-width: 575px) {
+      margin-bottom: 0px;
+      .StartButton {
+        display: none;
+      }
+    }
+
+    &.Authorized {
+      justify-content: flex-end;
+    }
+  }
+
+  .HelpButton {
+    @media (max-width: 575px) {
+      margin-right: 12px;
+
+      .RioButton {
+        min-width: 55px;
+        background: var(--rio-primary);
+
+        svg {
+          margin-right: 0px;
+        }
+
+        span {
+          display: none;
+        }
+      }
+    }
+
+    @media (min-width: 575px) {
+      position: fixed;
+      z-index: 900;
+      bottom: 12px;
+      right: 12px;
+    }
+
+    .RioButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    svg {
+      fill: var(--white);
+      margin-right: 16px;
+    }
+  }
+  .links {
+    display: flex;
+    justify-content: center;
+
+    a {
+      padding: 4px;
+      color: var(--gray);
+      font-size: 12px;
+
+      &:hover {
+        color: var(--rio-secondary);
+      }
+    }
+  }
+}
